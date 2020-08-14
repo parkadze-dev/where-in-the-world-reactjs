@@ -1,0 +1,81 @@
+.filter-container {
+  position: relative;
+  margin-bottom: 36px;
+  .filter-btn {
+    height: 55px;
+    width: 218px;
+    line-height: 55px;
+    position: relative;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    box-shadow: 0 3px 6px rgba(17, 21, 23, 0.05);
+    outline: none;
+    cursor: pointer;
+    svg {
+      position: absolute;
+      top: 18px;
+      right: 16px;
+      width: 18px;
+      height: 18px;
+    }
+    span {
+      float: left;
+      margin-left: 16px;
+    }
+  }
+  .filter-options {
+    padding: 12px 0;
+    width: 219px;
+    margin-top: 4px;
+    position: absolute;
+    border-radius: 6px;
+    background-color: #ffffff;
+    button {
+      margin-bottom: 6px;
+      width: 100%;
+      padding: 4px 16px;
+      text-align: left;
+      font-weight: 600;
+      border: none;
+      outline: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+    button:first-child {
+      border-radius: 6px 6px 0 0;
+    }
+    button:last-child {
+      border-radius: 0px 0px 6px 6px;
+    }
+  }
+}
+
+.dark-mode {
+  .filter-btn {
+    color: #ffffff;
+    background-color: hsl(209, 23%, 22%);
+    svg {
+      fill: #ffffff;
+    }
+  }
+  .filter-options {
+    background-color: hsl(209, 23%, 22%);
+    button {
+      color: #ffffff;
+      background-color: hsl(209, 23%, 22%);
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .filter-container {
+    padding: inherit;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

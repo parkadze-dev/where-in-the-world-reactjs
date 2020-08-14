@@ -1,0 +1,49 @@
+.search-bar-container {
+  position: relative;
+  margin-bottom: 48px;
+  max-width: 500px;
+  input {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.875rem;
+    padding: 18px 0px 18px 78px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 3px 6px rgba(17, 21, 23, 0.05);
+  }
+  input::placeholder {
+    color: hsl(0, 0%, 52%);
+  }
+  svg {
+    fill: hsl(0, 0%, 52%);
+    top: 16px;
+    left: 30px;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.dark-mode {
+  .search-bar-container {
+    input {
+      color: #ffffff;
+      background-color: hsl(209, 23%, 22%);
+    }
+    input::placeholder {
+      color: #ffffff;
+    }
+    svg {
+      fill: #ffffff;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .search-bar-container {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}

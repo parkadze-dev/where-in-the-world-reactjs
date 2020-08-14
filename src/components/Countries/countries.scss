@@ -1,0 +1,14 @@
+.countries-container {
+  //   display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dark-mode {
+  .countries-container {
+    .loading-text {
+      color: #ffffff;
+    }
+  }
+}

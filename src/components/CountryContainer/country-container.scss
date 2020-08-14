@@ -1,0 +1,49 @@
+.country-container {
+  margin: 0 auto 32px auto;
+  width: 300px;
+  height: 100%;
+  color: hsl(200, 15%, 8%);
+  box-shadow: 0 3px 6px rgba(17, 21, 23, 0.05);
+  .country-flag {
+    border-radius: 8px 8px 0px 0px;
+    height: 170px;
+    img {
+      object-fit: cover;
+      width: 300px;
+      height: 170px;
+      border-radius: 8px 8px 0px 0px;
+    }
+  }
+  .country-desc {
+    padding: 28px 24px 42px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 8px 8px;
+    .country-name {
+      font-size: 1.125rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .country-info {
+      margin-bottom: 4px;
+      font-size: 0.875rem;
+      span:first-child {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.dark-mode {
+  .country-container {
+    color: #ffffff;
+    .country-desc {
+      background-color: hsl(209, 23%, 22%);
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .country-container {
+    margin: 0 36px 72px;
+  }
+}
