@@ -176,7 +176,7 @@ export default function CountryInfo(props) {
   return (
     <React.Fragment>
       {loading ? (
-        <span>Loading...</span>
+        <span className="loading-text">Loading...</span>
       ) : (
         <div className="country-info-container">
           <button className="back-btn" onClick={() => history.goBack()}>
