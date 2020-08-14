@@ -51,42 +51,6 @@ export default function CountryInfo(props) {
     getCountryInfo();
   }, []);
 
-  // async function fetchBorderCountryName() {
-  //   const promises = borderCodes.map(async (code) => {
-  //     const response = await Axios({
-  //       method: "GET",
-  //       url: `https://restcountries.eu/rest/v2/alpha/${code}`,
-  //     });
-
-  //     return {
-  //       name: response.data.name,
-  //     };
-  //   });
-
-  //   const results = await Promise.all(promises);
-  //   if (!results) return null;
-  //   else console.log(results);
-  // }
-
-  // fetchBorderCountryName();
-
-  // const functionWithPromise = (item) => {
-  //   //a function that returns a promise
-  //   return Promise.resolve("ok");
-  // };
-
-  // const anAsyncFunction = async (item) => {
-  //   return functionWithPromise(item);
-  // };
-
-  // const getData = async () => {
-  //   return Promise.all(borderCodes.map((item) => anAsyncFunction(item)));
-  // };
-
-  // getData().then((data) => {
-  //   console.log(data);
-  // });
-
   const getCurrencies = () => {
     if (info.currencies) {
       return (
@@ -110,68 +74,6 @@ export default function CountryInfo(props) {
       );
     } else return null;
   };
-
-  // const getBorderCountriesName = () => {
-  //   borderCodes.map((code, index) => {
-  // const info = axios
-  //   .get(`https://restcountries.eu/rest/v2/alpha/${code.toLowerCase()}`)
-  //   .then((res) => {
-  //     return <div>{res.data.name}</div>;
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   });
-  //   });
-  // };
-
-  // const getBorderCountries = () => {
-  //   if (borderCodes) {
-  //     return (
-  //       <React.Fragment>
-  //         {borderCodes.map((code, index) => {
-  //           const info = axios
-  //             .get(`https://restcountries.eu/rest/v2/alpha/${code}`)
-  //             .then((res) => {
-  //               return <span key={index}>{res.data.name} </span>;
-  //             })
-  //             .catch((err) => {
-  //               console.log(err);
-  //             });
-  //         })}
-  //       </React.Fragment>
-  //     );
-  //   } else return <span>no codezs</span>;
-  // };
-
-  {
-    /* {info.borders.map((item, index) => {
-            let borderCountryName = "";
-            const getBorderCountries = () => {
-              const data = axios
-                .get(`https://restcountries.eu/rest/v2/alpha?codes=${item}`)
-                .then((res) => {
-                  borderCountryName = res.data[0].name;
-                })
-                .catch((err) => console.log(err));
-            };
-            getBorderCountries(); */
-  }
-  // const names = [];
-  // const getBondries = () => {
-  //   if (borderCodes) {
-  //     borderCodes.map((code) => {
-  //       const data = axios
-  //         .get(`https://restcountries.eu/rest/v2/alpha?codes=${code}`)
-  //         .then((res) => {
-  //           // names.push(res.data[0].name);
-  //           setBorderNames(res.data[0].name);
-  //         })
-  //         .catch((err) => console.log(err));
-  //     });
-  //   }
-  // };
-
-  // getBondries();
 
   return (
     <React.Fragment>

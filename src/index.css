@@ -20,6 +20,10 @@ body {
   background-color: hsl(207, 26%, 17%);
 }
 
+.dark-mode .App {
+  background-color: hsl(207, 26%, 17%);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
