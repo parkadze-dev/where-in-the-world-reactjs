@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Where in the world 
+This project is a frontend challenge from https://www.frontendmentor.io/.
 
 ## Available Scripts
 
