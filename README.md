@@ -1,6 +1,9 @@
 ## Where in the world 
 This project is a frontend challenge from https://www.frontendmentor.io/.
 
+### Live Demo
+https://determined-jang-15e39d.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
